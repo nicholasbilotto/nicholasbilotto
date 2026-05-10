@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Bilotto - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #08090a;
+            --color-surface: #0f1011;
+            --color-surface-elevated: #191a1b;
+            --color-text-primary: #f7f8f8;
+            --color-text-secondary: #d0d6e0;
+            --color-text-tertiary: #8a8f98;
+            --color-brand: #5e6ad2;
+            --color-accent: #7170ff;
+            --border-subtle: rgba(255, 255, 255, 0.05);
+            --border-standard: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text-secondary);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-feature-settings: "cv01", "ss03";
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        header {
+            margin-bottom: 64px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 510;
+            color: var(--color-text-primary);
+            letter-spacing: -1.056px;
+            margin-bottom: 16px;
+            line-height: 1;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--color-text-tertiary);
+            max-width: 600px;
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 590;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-tertiary);
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 8px;
+        }
+
+        .experience-item {
+            margin-bottom: 32px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-size: 17px;
+            font-weight: 590;
+            color: var(--color-text-primary);
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: var(--color-text-tertiary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .item-role {
+            font-size: 15px;
+            color: var(--color-brand);
+            margin-bottom: 12px;
+        }
+
+        .item-description {
+            font-size: 15px;
+            color: var(--color-text-secondary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-standard);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: var(--color-text-primary);
+            text-align: center;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-standard);
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            transition: background 0.2s ease;
+        }
+
+        .project-card:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .project-name {
+            font-size: 18px;
+            font-weight: 590;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-subtle);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--color-brand);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 510;
+            font-size: 15px;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--color-accent);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .contact-links a {
+            color: var(--color-text-tertiary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--color-text-primary);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 36px; }
+            .item-header { flex-direction: column; }
+            .item-date { margin-top: 4px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nicholas Bilotto</h1>
+            <p class="subtitle">Software Developer specializing in high-end product engineering, clean architecture, and intentional design.</p>
+        </header>
+
+        <section>
+            <h2>Profile</h2>
+            <p>I build applications that bridge the gap between complex business logic and premium user experiences. With a background in strategic content and business development, I approach every line of code with the end-user and business impact in mind. I focus on the MERN stack, Next.js, and React Native.</p>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Lohmont</div>
+                    <div class="item-date">2024 — PRESENT</div>
+                </div>
+                <div class="item-role">Software Developer & Founder</div>
+                <p class="item-description">Leading technical development for high-end web and mobile solutions. Engineered business intelligence tools and conversion-focused landing pages for automotive and luxury sectors.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <div class="project-card">
+                <div class="project-name">TCC BI Dashboard (Firm-Dash)</div>
+                <p class="item-description">MERN stack business intelligence platform. Engineered complex royalty calculation engines and multi-tenant data visualization layers.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-name">JConcierge</div>
+                <p class="item-description">React Native & Expo mobile application. Premium concierge service interface with fluid navigation and dynamic routing.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-name">Surfline Analytics</div>
+                <p class="item-description">Python-based surf performance engine. Algorithm development for ride segmentation and spatial data heatmaps.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">React / Next.js</div>
+                <div class="skill-tag">Node.js / Express</div>
+                <div class="skill-tag">React Native / Expo</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">MongoDB / Prisma</div>
+                <div class="skill-tag">Tailwind CSS</div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="mailto:nick@nicholasbilotto.com" class="btn">Get in Touch</a>
+            <div class="contact-links">
+                <a href="https://github.com/nicholasbilotto">GitHub</a>
+                <a href="https://www.linkedin.com/in/nicholasbilotto/">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
