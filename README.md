@@ -13,6 +13,9 @@ A conversion focused B2B landing page for luxury automotive AI solutions. Showca
 ### [WaveForm](https://github.com/nicholasbilotto/waveform)
 A community driven platform for surfers focused on performance tracking and local wave data. Features data driven insights from custom Python scripts for ride segmentation.
 
+## Resources
+- [Professional Resume (PDF/MD)](https://github.com/nicholasbilotto/nicholasbilotto/blob/main/Resume.md)
+
 ## Connect with me
 - **LinkedIn:** [nicholasbilotto](https://www.linkedin.com/in/nicholasbilotto/)
 - **Email:** [nick@nicholasbilotto.com](mailto:nick@nicholasbilotto.com)
